@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Inconsolata&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Overpass&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(0deg, #fff, #a9d9f0);
+}
+
+#title {
+  margin: 15px;
+  text-align: center;
+  font-family: "Open Sans Condensed";
+}
+
+#title h1 {
+  
+  font-size: 50px;
+  margin-bottom: 0;
+}
+
+#title h2 {
+  margin-top: 0;
+  font-style: italic;
+}
+
+#img-div {
+  margin: 50px auto 50px;
+  cursor: pointer;
+  font-family: Inconsolata;
+  font-weight: 900;
+}
+
+#img-div figure {
+  margin: 0;
+}
+
+#image {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  border-radius: 10px;
+  opacity: 0.9;
+}
+
+#image:hover {
+  opacity: 1;
+}
+
+#img-caption {
+  text-align: center;
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+#img-caption:before {
+  content: "-";
+}
+
+#img-caption:after {
+  content: "-";
+}
+
+#tribute-info {
+  margin: 100px 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+}
+
+#tribute-info article {
+  font-family: "Open Sans Condensed";
+  background: linear-gradient(0deg, #212121, #000000);
+  opacity: 0.8;
+  color: #fff;
+}
+
+#tribute-info article:hover {
+  background: #000;
+  color: #fff;
+  cursor: pointer;
+}
+
+#tribute-info h2 {
+  font-size: 30px;
+  color: #FFC107;
+  text-align: center;
+}
+
+#tribute-info h4 {
+  font-weight: 200;
+  font-size: 20px;
+  margin: 20px;
+}
+
+footer {
+  background-color: #03A9F4;
+  width: 70%;
+  margin: 0 auto;
+  border-radius: 50px 50px 0 0;
+}
+
+footer p {
+  text-align: center;
+  font-family: Overpass;
+  font-size: 1.5vw;
+  margin: 0;
+  padding: 10px 0;
+  font-weight: bold;
+  color: #fff;
+}
+
+#tribute-link {
+  text-decoration: none;
+  color: #FFC107;
+  opacity: 1;
+}
+
+@media (max-width: 650px) {
+  #tribute-info {
+    margin: 100px 20px;
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  #image {
+    max-width: 50%;
+  }
+
+  #img-caption {
+    font-size: 15px;
+  }
+
+  footer p {
+    font-size: 2.5vw;
+  }
+}
